@@ -1,10 +1,17 @@
----
-title: Combine Multiple Reducers
----
-## Combine Multiple Reducers
+Let’s break the instructions down to figure exactly what it’s asking.
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/front-end-libraries/redux/combine-multiple-reducers/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+  1. Finish writing the rootReducer() function using the Redux.combineReducers() method.
+  2. Assign counterReducer to a key called count and authReducer to a key called auth.
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+Great! so now do the steps!
 
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+finish writing the function passing an object argument with count and auth keys.
+
+```
+const rootReducer = Redux.combineReducers({
+  count: counterReducer,
+  auth: authReducer
+});
+```
+
+
